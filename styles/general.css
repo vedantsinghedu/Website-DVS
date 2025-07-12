@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #FFFFFF;
+    color: white;
+    font-family: Poppins, sans-serif;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures no unexpected scrollbars */
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(230, 81, 0);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: green;
+    font-size: 1.03rem;
+}
+

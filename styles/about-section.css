@@ -1,0 +1,52 @@
+.second-bg {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    background: linear-gradient(45deg, #413e3d, #222322);
+    opacity: 1;
+    position: relative; /* Needed for absolute positioning of child */
+    width: 100%; /* Match image width */
+    height: 600px; /* Match image height */
+    
+}
+
+.second-bgg {
+    width: 100%; /* Fill parent */
+    height: 100%; /* Fill parent */
+    object-fit: cover;
+    opacity: 0.2;
+    filter: blur(1px);
+}
+
+.second-bggg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center text vertically and horizontally */
+    color: white; /* Ensure text is visible */
+    text-align: center; /* Center-align text */
+}
+
+.second-bggg-heading h4 {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+    padding-top: 100px;
+}
+
+.second-bggg-about p{
+    font-size: 1.9rem; /* Adjust paragraph text size */
+    padding: 20px 60px 0px 60px;
+}
+
+.love-team-bitbytes{
+    padding-top: 15px;
+}
+
+.heart {
+    color: #ff7979; /* Pure red */
+    font-size: 1.2em; /* Slightly larger */
+    text-shadow: 0 0 5px rgb(255, 255, 255); /* Glow effect */
+}

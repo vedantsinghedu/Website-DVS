@@ -1,0 +1,103 @@
+.main-content {
+    display: flex; /* Keeps left-section & right-section side-by-side */
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.top-logo-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.eci-logo{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    
+}
+
+
+.fade-image {
+    width: 150px; /* adjust as needed */
+    -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 10px), transparent 100%);
+    mask-image: linear-gradient(to bottom, black calc(100% - 10px), transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  
+
+.left{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.up-first-section{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: row; /* Stack main-content and scroll-1 vertically */
+    justify-content: space-between; /* Pushes scroll-1 to the bottom */
+    margin: 23px 0 0 0;
+}
+
+.left-section {
+width: 50%;              
+font-size: 2.5rem;
+color: black;
+margin-left: 4%;
+
+}
+
+.left-section p {
+    padding-top: 90px;
+
+}
+
+.right-section {
+width: 50%;
+}
+
+.right-section img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+.technology-text{
+    color: blue;
+    font-weight: 500;
+    font-style: italic;
+    font-size: larger;
+}
+
+.single-letter-text{
+    color: rgb(4, 79, 4);
+    font-weight:600;
+    font-size: 45px;
+  
+}
+
+.adjectives-vote:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2.7px;
+}
+
+.scroll-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.gif-style{
+    width: 70px;
+    height: 70px;
+}
+
+
