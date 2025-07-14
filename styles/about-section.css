@@ -1,52 +1,167 @@
+/* Second Section Styles */
+.second-section {
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+
 .second-bg {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    justify-content: center;
     background: linear-gradient(45deg, #413e3d, #222322);
-    opacity: 1;
-    position: relative; /* Needed for absolute positioning of child */
-    width: 100%; /* Match image width */
-    height: 600px; /* Match image height */
-    
+    margin-top: 25px;
 }
 
 .second-bgg {
-    width: 100%; /* Fill parent */
-    height: 100%; /* Fill parent */
-    object-fit: cover;
-    opacity: 0.2;
-    filter: blur(1px);
-}
-
-.second-bggg {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.second-bggg {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center text vertically and horizontally */
-    color: white; /* Ensure text is visible */
-    text-align: center; /* Center-align text */
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .second-bggg-heading h4 {
-    font-size: 2.5rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Space between heading and paragraph */
-    padding-top: 100px;
+    font-size: 2.9rem;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
-.second-bggg-about p{
-    font-size: 1.9rem; /* Adjust paragraph text size */
-    padding: 20px 60px 0px 60px;
+.second-bggg-about {
+    max-width: 1000px;
+    width: 100%;
 }
 
-.love-team-bitbytes{
-    padding-top: 15px;
+.second-bggg-about p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.love-team-bitbytes {
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 .heart {
-    color: #ff7979; /* Pure red */
-    font-size: 1.2em; /* Slightly larger */
-    text-shadow: 0 0 5px rgb(255, 255, 255); /* Glow effect */
+    color: #ff7979;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .second-bg {
+        min-height: 500px;
+        margin-top: 20px;
+    }
+
+    .second-bggg-heading h4 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .second-bggg-about p {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+
+    .love-team-bitbytes {
+        font-size: 1.1rem;
+    }
+
+    .second-bggg {
+        padding: 30px 35px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .second-bg {
+        min-height: 400px;
+        margin-top: 15px;
+    }
+
+    .second-bggg {
+        padding: 25px 30px;
+    }
+
+    .second-bggg-heading h4 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .second-bggg-about p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .love-team-bitbytes {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .second-bg {
+        min-height: 350px;
+        margin-top: 10px;
+    }
+
+    .second-bggg {
+        padding: 20px 25px;
+    }
+
+    .second-bggg-heading h4 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .second-bggg-about p {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .love-team-bitbytes {
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+}
+
+/* Very Small Mobile Styles */
+@media screen and (max-width: 320px) {
+    .second-bggg-heading h4 {
+        font-size: 1.3rem;
+    }
+
+    .second-bggg-about p {
+        font-size: 0.9rem;
+    }
+
+    .love-team-bitbytes {
+        font-size: 0.8rem;
+    }
 }

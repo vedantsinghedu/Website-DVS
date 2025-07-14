@@ -1,49 +1,166 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
+body {
     background-color: #FFFFFF;
     color: white;
     font-family: Poppins, sans-serif;
-
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensures no unexpected scrollbars */
-    overflow-x: hidden; /* Prevents horizontal overflow */
+    height: 100%;
+    overflow-x: hidden;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
     background-color: rgb(230, 81, 0);
+    position: relative;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
-
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     margin: 0 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: green;
     font-size: 1.03rem;
 }
 
+.top-logo-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eci-logo {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+.left {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .right {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(230, 81, 0);
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .right.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        margin: 2px 0;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 8px 15px;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    nav ul li a:hover {
+        color: green;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+    }
+    
+    .left {
+        font-size: 1.1rem;
+        margin-right: 10px;
+    }
+    
+    .eci-logo {
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+    }
+}

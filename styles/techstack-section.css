@@ -1,6 +1,7 @@
+/* TechStack Section Styles */
 .tech-stack-section {
     background-color: white;
-    padding: 80px 20px 50px 80px;
+    padding: 80px 0px 80px 0px;
     text-align: center;
 }
 
@@ -57,3 +58,135 @@
 .tech-card:nth-child(1) { transition-delay: 0.3s; }
 .tech-card:nth-child(2) { transition-delay: 0.3s; }
 .tech-card:nth-child(3) { transition-delay: 0.3s; }
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .tech-stack-section {
+        padding: 70px 40px 40px 40px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        letter-spacing: 1.2px;
+    }
+
+    .tech-grid {
+        gap: 60px;
+        max-width: 800px;
+    }
+
+    .tech-card {
+        width: 190px;
+        height: 190px;
+    }
+
+    .tech-logo {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .tech-stack-section {
+        padding: 60px 30px 30px 30px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .tech-grid {
+        gap: 40px;
+        max-width: 600px;
+    }
+
+    .tech-card {
+        width: 170px;
+        height: 170px;
+    }
+
+    .tech-logo {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .tech-stack-section {
+        padding: 50px 20px 25px 20px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        letter-spacing: 0.8px;
+    }
+
+    .tech-grid {
+        gap: 30px;
+        max-width: 400px;
+    }
+
+    .tech-card {
+        width: 150px;
+        height: 150px;
+        border-radius: 12px;
+    }
+
+    .tech-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Adjust hover effects for smaller screens */
+    .tech-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .tech-card:hover .tech-logo {
+        transform: scale(1.1);
+    }
+}
+
+/* Very Small Mobile Styles */
+@media screen and (max-width: 320px) {
+    .tech-stack-section {
+        padding: 40px 15px 20px 15px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .tech-grid {
+        gap: 20px;
+        max-width: 300px;
+    }
+
+    .tech-card {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .tech-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+/* Single column layout for very small screens */
+@media screen and (max-width: 400px) {
+    .tech-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
