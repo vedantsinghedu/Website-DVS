@@ -232,9 +232,10 @@
     .mentor-description {
         text-align: center;
         margin-bottom: 0;
-        margin-right:0;
-        margin-left:0;
-        padding-right: 0;
+        margin-right:15px;
+        margin-left:15px;
+        padding-right: 0px;
+
     }
 }
 
@@ -260,6 +261,8 @@
 
     .mentor-description{
         margin-right: 0;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
 
