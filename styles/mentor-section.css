@@ -93,8 +93,8 @@
 }
 
 .mentor-photo {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid rgba(255, 255, 255, 0.2);
@@ -225,13 +225,16 @@
     }
 
     .mentor-photo {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
     .mentor-description {
         text-align: center;
         margin-bottom: 0;
+        margin-right:0;
+        margin-left:0;
+        padding-right: 0;
     }
 }
 
@@ -253,6 +256,10 @@
     .skill-tag {
         font-size: 0.75rem;
         padding: 6px 12px;
+    }
+
+    .mentor-description{
+        margin-right: 0;
     }
 }
 
