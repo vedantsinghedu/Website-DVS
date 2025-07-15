@@ -77,6 +77,11 @@
     margin-top: -200px;
 }
 
+.ayush-image{
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
 .sunidhi-image {
     padding-right: 25px;
     padding-bottom: 5px;
@@ -193,6 +198,7 @@
     .team-header p {
         font-size: 1.5rem;
         padding: 0 20px;
+        margin-bottom: 15px;
     }
     
     .team-overalll {
@@ -224,7 +230,7 @@
     
     .team-header p {
         font-size: 1.3rem;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
     }
     
     .team-overalll {
@@ -238,12 +244,14 @@
         flex: 0 0 calc(50% - 25px);
         max-width: 300px;
         padding: 40px 15px 35px 15px;
+        margin-bottom: 115px;
     }
     
     .team-photo {
-        width: 150px;
-        height: 180px;
+        width: 220px;
+        height: 230px;
         margin: -30px 0 15px 0;
+        margin-left: 15px;
     }
     
     .team-photo img {
@@ -259,6 +267,7 @@
     
     .team-info p {
         font-size: 0.9rem;
+        margin-bottom: 20px;
     }
     
     .team-description {
@@ -298,6 +307,7 @@
     .team-header p {
         font-size: 1.3rem;
         padding: 0 15px;
+        margin-bottom: 0px;
     }
     
     .team-overalll {
@@ -313,8 +323,8 @@
     }
 
     .team-photo {
-        width: 230px;
-        height: 200px;
+        width: 250px;
+        height: 240px;
         margin: -25px 0 10px 0;
         margin-left: 30px;
     }
@@ -326,14 +336,14 @@
     }
     
     .team-info h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: -100px;
     }
 
     
     .team-info p {
         font-size: 0.8rem;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     .team-description {
@@ -390,8 +400,8 @@
     }
     
     .team-photo {
-        width: 250px;
-        height: 220px;
+        width: 240px;
+        height: 230px;
         margin: -30px 0 15px 0;
         margin-left: 15px;
     }
@@ -403,7 +413,7 @@
     }
     
     .team-info h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin-top: -115px;
     }
     
@@ -439,6 +449,7 @@
     
     .team-header p {
         font-size: 0.9rem;
+        margin-bottom: 20px;
     }
     
     .team-member {
@@ -447,8 +458,9 @@
     }
     
     .team-photo {
-        width: 120px;
-        height: 150px;
+        width: 200px;
+        height: 220px;
+        margin-left: 40px;
     }
     
     .team-photo img {
